@@ -1,0 +1,1 @@
+A simple python program that allows you to create a jpeg image of a puzzle to solve from an SVG (that can be downloaded from [puzzle.telegnom.org](https://puzzle.telegnom.org/) for example)
