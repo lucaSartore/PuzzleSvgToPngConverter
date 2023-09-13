@@ -1,6 +1,6 @@
 import cairosvg
 
-def svg_to_png(input_path: str, output_path: str, ppi: int = 1200):
+def svg_to_png(input_path: str, output_path: str, dpi: int = 1200):
   """Convert one SVG file to a PNG file with the requested ppi (Pixel per inch).
 
   Args:
@@ -9,12 +9,13 @@ def svg_to_png(input_path: str, output_path: str, ppi: int = 1200):
     ppi: The PPI (Pixel per inch) of the output PNG file.
   """
 
-  with open(input_path, "rb") as f:
-    svg = f.read()
 
   cairosvg.svg2png(
-      svg=svg,
+      url=input_path,
       write_to=output_path,
-      dpi=ppi,
-      background_color="#ffffff"
+      dpi=dpi,
+      background_color="white"
   )
+
+if __name__ == "__main__":
+  svg_to_png(r".\SVGs\8x8.svg",r".\PNGs\8x8.png")
