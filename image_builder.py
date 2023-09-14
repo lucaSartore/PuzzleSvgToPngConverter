@@ -75,7 +75,7 @@ def main():
     num_of_pieces = len(all_pieces)
 
     pieces_per_side = math.ceil(np.sqrt(num_of_pieces))
-    side_len =  (pieces_per_side+1)*max_dim
+    side_len =  (pieces_per_side)*max_dim+1
 
     result_image = np.zeros(shape=(side_len,side_len),dtype=np.uint8)
 
