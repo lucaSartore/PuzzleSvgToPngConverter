@@ -18,4 +18,4 @@ def svg_to_png(input_path: str, output_path: str, dpi: int = 1200):
   )
 
 if __name__ == "__main__":
-  svg_to_png(r".\SVGs\8x8.svg",r".\PNGs\8x8.png")
+  svg_to_png(r".\SVGs\5x7.svg",r".\PNGs\5x7.png")

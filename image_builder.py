@@ -7,7 +7,7 @@ import random
 import os
 
 # name of the piece
-NAME = "16x16"
+NAME = "16x30"
 # the margin kept when cropping an image
 CROP_MARGIN = 500
 
@@ -90,7 +90,6 @@ def main():
         p4 = (p4[0]-x0, p4[1] - y0)
 
         # draw corner for debug
-        
         """
         piece = cv2.line(piece,p1,p2,color=125,thickness=10)
         piece = cv2.line(piece,p2,p3,color=125,thickness=10)
